@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{07B91A75-D123-4400-AE00-172A3E66156F}</ProjectGuid>
+    <RootNamespace>CloudERV</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>C:\Program Files (x86)\Codejock Software\MFC\Xtreme ToolkitPro v15.3.1\Lib\vc100;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>C:\Program Files (x86)\Codejock Software\MFC\Xtreme ToolkitPro v15.3.1\Lib\vc100;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Codejock Software\MFC\Xtreme ToolkitPro v15.3.1\Source;$(IncludePath)</IncludePath>
+    <SourcePath>C:\Program Files %28x86%29\Codejock Software\MFC\Xtreme ToolkitPro v15.3.1\Source;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;SA_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\libs\sqlapi\include;.;..\libs\mupdf\include;..\libs\dcmtk\include;..\libs\zlib\include;..\libs\openssl\include;..\libs\curl\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libs\sqlapi\vs2010\lib;..\libs\mupdf\lib;..\libs\dcmtk\lib_d;..\libs\openssl\lib;..\libs\curl\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sqlapiusd.lib;Version.lib;libmupdfsd.lib;netapi32.lib;dcmimage.lib;dcmdata.lib;ofstd.lib;dcmimgle.lib;dcmnet.lib;dcmjpeg.lib;ijg8.lib;ijg16.lib;ijg12.lib;oflog.lib;windowscodecs.lib;libeay32.lib;ssleay32.lib;libcurl_a.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SA_UNICODE;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\libs\sqlapi\include;.;..\libs\mupdf\include;..\libs\dcmtk\include;..\libs\zlib\include;..\libs\openssl\include;..\libs\curl\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sqlapius.lib;Version.lib;libmupdfs.lib;netapi32.lib;dcmimage.lib;dcmdata.lib;ofstd.lib;dcmimgle.lib;dcmnet.lib;dcmjpeg.lib;ijg8.lib;ijg16.lib;ijg12.lib;oflog.lib;windowscodecs.lib;libeay32.lib;ssleay32.lib;libcurl_a.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\libs\sqlapi\vs2010\lib;..\libs\mupdf\lib;..\libs\dcmtk\lib;..\libs\openssl\lib;..\libs\curl\lib</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bitmapVw.bmp" />
+    <None Include="res\bkground.bmp" />
+    <None Include="res\BLACKBDY.LUT" />
+    <None Include="res\BookingOfRISTB.bmp" />
+    <None Include="res\BookingReportItemTB.bmp" />
+    <None Include="res\CARDIAC.LUT" />
+    <None Include="res\CloudERV.cfg" />
+    <None Include="res\CloudERV.ico" />
+    <None Include="res\CloudERV.rc2" />
+    <None Include="res\CloudERVDoc.ico" />
+    <None Include="res\DcmImageTb.bmp" />
+    <None Include="res\DcmSeriesCmpTB.bmp" />
+    <None Include="res\FailedToLoadImage.Rtf" />
+    <None Include="res\FLOW.LUT" />
+    <None Include="res\GE_COLOR.LUT" />
+    <None Include="res\GOLD.LUT" />
+    <None Include="res\Gone Fishing.bmp" />
+    <None Include="res\hand.cur" />
+    <None Include="res\handdrag.cur" />
+    <None Include="res\HOTIRON.LUT" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\layout1.bmp" />
+    <None Include="res\layout10.bmp" />
+    <None Include="res\layout11.bmp" />
+    <None Include="res\layout12.bmp" />
+    <None Include="res\layout2.bmp" />
+    <None Include="res\layout3.bmp" />
+    <None Include="res\layout4.bmp" />
+    <None Include="res\layout5.bmp" />
+    <None Include="res\layout6.bmp" />
+    <None Include="res\layout7.bmp" />
+    <None Include="res\layout8.bmp" />
+    <None Include="res\layout9.bmp" />
+    <None Include="res\measure.cur" />
+    <None Include="res\Minitoolbar.bmp" />
+    <None Include="res\move.cur" />
+    <None Include="res\NIH.LUT" />
+    <None Include="res\NIH_FIRE.LUT" />
+    <None Include="res\NIH_ICE.LUT" />
+    <None Include="res\PdfReportTb.bmp" />
+    <None Include="res\PopupClose.ico" />
+    <None Include="res\PublishedReportTb.bmp" />
+    <None Include="res\RAINRAMP.LUT" />
+    <None Include="res\scroll.cur" />
+    <None Include="res\search.ico" />
+    <None Include="res\sort_incr.ico" />
+    <None Include="res\SPECTRUM.LUT" />
+    <None Include="res\toolbar1.bmp" />
+    <None Include="res\WaitingPriorThread.Rtf" />
+    <None Include="res\winlevel.cur" />
+    <None Include="res\X_HOT.LUT" />
+    <None Include="res\X_RAIN.LUT" />
+    <None Include="res\zoom.cur" />
+    <None Include="ViewerAutomation\ViewerAutomation.nsmap" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Aescrypt.h" />
+    <ClInclude Include="BitmapViewerDoc.h" />
+    <ClInclude Include="BitmapViewerFrm.h" />
+    <ClInclude Include="BookingOfRISDoc.h" />
+    <ClInclude Include="BookingOfRISFrm.h" />
+    <ClInclude Include="BookingOfRISView.h" />
+    <ClInclude Include="CalibrateDlg.h" />
+    <ClInclude Include="cdxCRot90DC.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="CloudERV.h" />
+    <ClInclude Include="CWebBrowser2.h" />
+    <ClInclude Include="DcmSeriesCompareFrm.h" />
+    <ClInclude Include="DcmSeriesCompareView.h" />
+    <ClInclude Include="DcmImageDoc.h" />
+    <ClInclude Include="DcmImageFrm.h" />
+    <ClInclude Include="DcmImageView.h" />
+    <ClInclude Include="DicomObject.h" />
+    <ClInclude Include="DicomViewer.h" />
+    <ClInclude Include="DirDialog.h" />
+    <ClInclude Include="DummyDoc.h" />
+    <ClInclude Include="EncodeStringDlg.h" />
+    <ClInclude Include="FTPClient\BlockingSocket.h" />
+    <ClInclude Include="FTPClient\Definements.h" />
+    <ClInclude Include="FTPClient\FTPClient.h" />
+    <ClInclude Include="FTPClient\FTPDataTypes.h" />
+    <ClInclude Include="FTPClient\FTPFileStatus.h" />
+    <ClInclude Include="FTPClient\FTPListParse.h" />
+    <ClInclude Include="BitmapViewer.h" />
+    <ClInclude Include="BitmapViewerView.h" />
+    <ClInclude Include="DcmSeriesCompareDoc.h" />
+    <ClInclude Include="JPEGIJG.H" />
+    <ClInclude Include="MagnifyWnd.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MedicalResultObject.h" />
+    <ClInclude Include="MedicalResultView.h" />
+    <ClInclude Include="MemoryDC.h" />
+    <ClInclude Include="MiniToolBar.h" />
+    <ClInclude Include="MsgBox.h" />
+    <ClInclude Include="MuPDFClass.h" />
+    <ClInclude Include="NewBookingDlg.h" />
+    <ClInclude Include="OptionsWinLevelDlg.h" />
+    <ClInclude Include="PdfReportDoc.h" />
+    <ClInclude Include="PdfReportFrm.h" />
+    <ClInclude Include="PdfReportView.h" />
+    <ClInclude Include="PdfViewer.h" />
+    <ClInclude Include="PresetWL.h" />
+    <ClInclude Include="ProgressWnd.h" />
+    <ClInclude Include="PublishedReportDoc.h" />
+    <ClInclude Include="PublishedReportFrm.h" />
+    <ClInclude Include="PublishedReportObject.h" />
+    <ClInclude Include="PublishedReportView.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SensitivityDlg.h" />
+    <ClInclude Include="SetImgLayout.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SystemConfiguration.h" />
+    <ClInclude Include="ViewerAutomation\soapH.h" />
+    <ClInclude Include="ViewerAutomation\soapStub.h" />
+    <ClInclude Include="ViewerAutomation\soapStudyLocatorProxy.h" />
+    <ClInclude Include="ViewerAutomation\soapViewerAutomationProxy.h" />
+    <ClInclude Include="ViewerAutomation\stdsoap2.h" />
+    <ClInclude Include="WebBrowserDoc.h" />
+    <ClInclude Include="WebBrowserFrm.h" />
+    <ClInclude Include="WebBrowserView.h" />
+    <ClInclude Include="WinLevel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Aescrypt.cpp" />
+    <ClCompile Include="BitmapViewerDoc.cpp" />
+    <ClCompile Include="BitmapViewerFrm.cpp" />
+    <ClCompile Include="BookingOfRISDoc.cpp" />
+    <ClCompile Include="BookingOfRISFrm.cpp" />
+    <ClCompile Include="BookingOfRISView.cpp" />
+    <ClCompile Include="CalibrateDlg.cpp" />
+    <ClCompile Include="cdxCRot90DC.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="CloudERV.cpp" />
+    <ClCompile Include="CWebBrowser2.cpp" />
+    <ClCompile Include="DcmSeriesCompareFrm.cpp" />
+    <ClCompile Include="DcmSeriesCompareView.cpp" />
+    <ClCompile Include="DcmImageDoc.cpp" />
+    <ClCompile Include="DcmImageFrm.cpp" />
+    <ClCompile Include="DcmImageView.cpp" />
+    <ClCompile Include="DicomObject.cpp" />
+    <ClCompile Include="DicomViewer.cpp" />
+    <ClCompile Include="DirDialog.cpp" />
+    <ClCompile Include="DummyDoc.cpp" />
+    <ClCompile Include="EncodeStringDlg.cpp" />
+    <ClCompile Include="FTPClient\BlockingSocket.cpp" />
+    <ClCompile Include="FTPClient\FTPClient.cpp" />
+    <ClCompile Include="FTPClient\FTPDataTypes.cpp" />
+    <ClCompile Include="FTPClient\FTPFileStatus.cpp" />
+    <ClCompile Include="FTPClient\FTPListParse.cpp" />
+    <ClCompile Include="BitmapViewer.cpp" />
+    <ClCompile Include="BitmapViewerView.cpp" />
+    <ClCompile Include="DcmSeriesCompareDoc.cpp" />
+    <ClCompile Include="JPEGIJG.CPP" />
+    <ClCompile Include="MagnifyWnd.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MedicalResultObject.cpp" />
+    <ClCompile Include="MedicalResultView.cpp" />
+    <ClCompile Include="MemoryDC.cpp" />
+    <ClCompile Include="MiniToolBar.cpp" />
+    <ClCompile Include="MsgBox.cpp" />
+    <ClCompile Include="MuPDFClass.cpp" />
+    <ClCompile Include="NewBookingDlg.cpp" />
+    <ClCompile Include="OptionsWinLevelDlg.cpp" />
+    <ClCompile Include="PdfReportDoc.cpp" />
+    <ClCompile Include="PdfReportFrm.cpp" />
+    <ClCompile Include="PdfReportView.cpp" />
+    <ClCompile Include="PdfViewer.cpp" />
+    <ClCompile Include="PresetWL.cpp" />
+    <ClCompile Include="ProgressWnd.cpp" />
+    <ClCompile Include="PublishedReportDoc.cpp" />
+    <ClCompile Include="PublishedReportFrm.cpp" />
+    <ClCompile Include="PublishedReportObject.cpp" />
+    <ClCompile Include="PublishedReportView.cpp" />
+    <ClCompile Include="SensitivityDlg.cpp" />
+    <ClCompile Include="SetImgLayout.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SystemConfiguration.cpp" />
+    <ClCompile Include="ViewerAutomation\dom.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ViewerAutomation\soapC.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ViewerAutomation\soapStudyLocatorProxy.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ViewerAutomation\soapViewerAutomationProxy.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ViewerAutomation\stdsoap2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="WebBrowserDoc.cpp" />
+    <ClCompile Include="WebBrowserFrm.cpp" />
+    <ClCompile Include="WebBrowserView.cpp" />
+    <ClCompile Include="WinLevel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CloudERV.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CloudERV.rc" _x007B_8856F961-340A-11D0-A96B-00C04FD705A2_x007D_="CWebBrowser2" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

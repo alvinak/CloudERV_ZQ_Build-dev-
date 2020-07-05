@@ -1,0 +1,18 @@
+//
+// CloudERV.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+#include <XTToolkitPro.rc>
+
+#include ".\\res\\styles\\Office2010BlueSkin.rc"
+#include ".\\res\\styles\\Office2007Blue.rc"
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+/////////////////////////////////////////////////////////////////////////////

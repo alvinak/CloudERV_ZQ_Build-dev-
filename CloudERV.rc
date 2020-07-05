@@ -1,0 +1,1284 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\CloudERV.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""    // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RTF
+//
+
+IDR_FAILEDTOLOADIMAGE   RTF                     "res\\FailedToLoadImage.Rtf"
+IDR_WAITINGPRIORTHREAD  RTF                     "res\\WaitingPriorThread.Rtf"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// CFG
+//
+
+IDR_CONFIGFILE          CFG                     "res\\CloudERV.cfg"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// LUTDATA
+//
+
+IDR_FAKECOLOR1          LUTDATA                 "res\\NIH.LUT"
+IDR_FAKECOLOR2          LUTDATA                 "res\\NIH_FIRE.LUT"
+IDR_FAKECOLOR3          LUTDATA                 "res\\NIH_ICE.LUT"
+IDR_FAKECOLOR4          LUTDATA                 "res\\RAINRAMP.LUT"
+IDR_FAKECOLOR5          LUTDATA                 "res\\SPECTRUM.LUT"
+IDR_FAKECOLOR6          LUTDATA                 "res\\X_HOT.LUT"
+IDR_FAKECOLOR7          LUTDATA                 "res\\X_RAIN.LUT"
+IDR_FAKECOLOR8          LUTDATA                 "res\\HOTIRON.LUT"
+IDR_FAKECOLOR9          LUTDATA                 "res\\GOLD.LUT"
+IDR_FAKECOLORA          LUTDATA                 "res\\GE_COLOR.LUT"
+IDR_FAKECOLORB          LUTDATA                 "res\\FLOW.LUT"
+IDR_FAKECOLORC          LUTDATA                 "res\\CARDIAC.LUT"
+IDR_FAKECOLORD          LUTDATA                 "res\\BLACKBDY.LUT"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CloudERV.ico"
+IDI_SEARCH              ICON                    "res\\search.ico"
+IDI_POPUP_CLOSE         ICON                    "res\\PopupClose.ico"
+IDI_SORTINCR            ICON                    "res\\sort_incr.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_IMGLAYOUT_LAYOUT1   BITMAP                  "res\\layout1.bmp"
+IDB_IMGLAYOUT_LAYOUT2   BITMAP                  "res\\layout2.bmp"
+IDB_IMGLAYOUT_LAYOUT3   BITMAP                  "res\\layout3.bmp"
+IDB_IMGLAYOUT_LAYOUT4   BITMAP                  "res\\layout4.bmp"
+IDB_IMGLAYOUT_LAYOUT5   BITMAP                  "res\\layout5.bmp"
+IDB_IMGLAYOUT_LAYOUT6   BITMAP                  "res\\layout6.bmp"
+IDB_IMGLAYOUT_LAYOUT7   BITMAP                  "res\\layout7.bmp"
+IDB_IMGLAYOUT_LAYOUT8   BITMAP                  "res\\layout8.bmp"
+IDB_IMGLAYOUT_LAYOUT9   BITMAP                  "res\\layout9.bmp"
+IDB_IMGLAYOUT_LAYOUT10  BITMAP                  "res\\layout10.bmp"
+IDB_IMGLAYOUT_LAYOUT11  BITMAP                  "res\\layout11.bmp"
+IDB_IMGLAYOUT_LAYOUT12  BITMAP                  "res\\layout12.bmp"
+IDR_MINITOOLBAR         BITMAP                  "res\\Minitoolbar.bmp"
+IDR_PDFREPORT           BITMAP                  "res\\PdfReportTb.bmp"
+IDR_PUBLISHEDREPORT     BITMAP                  "res\\PublishedReportTb.bmp"
+IDR_DCMIMAGE            BITMAP                  "res\\DcmImageTb.bmp"
+IDR_BOOKINGOFRIS        BITMAP                  "res\\BookingOfRISTB.bmp"
+IDB_BOOKINGREPORTITEMTB BITMAP                  "res\\BookingReportItemTB.bmp"
+IDR_BITMAPVIEWER        BITMAP                  "res\\bitmapVw.bmp"
+IDB_BMPVIEW_BKGROUND    BITMAP                  "res\\Gone Fishing.bmp"
+IDR_DCMSERIESCMP        BITMAP                  "res\\DcmSeriesCmpTB.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About CloudERV...",          ID_APP_ABOUT
+    END
+END
+
+ID_DCMVIEW_RBFUNC1 MENU
+BEGIN
+    POPUP "窗宽/窗位调整"
+    BEGIN
+        MENUITEM "输入值",                         ID_WINLEVEL_INPUT
+        MENUITEM "人体组织常见窗宽/窗位",                 ID_WINLEVEL_PRESETWL
+        MENUITEM SEPARATOR
+        MENUITEM "自动",                          ID_WINLEVEL_AUTO
+        MENUITEM SEPARATOR
+        MENUITEM "F3:胸",                        ID_WINLEVEL_CHEST
+        MENUITEM "F4:腹部/盆腔",                    ID_WINLEVEL_ABDOMEN
+        MENUITEM "F5:肺",                        ID_WINLEVEL_LUNG
+        MENUITEM "F6:脑",                        ID_WINLEVEL_BRAIN
+        MENUITEM "F7:骨",                        ID_WINLEVEL_BONE
+        MENUITEM "F8:头颈",                       ID_WINLEVEL_HEAD
+        MENUITEM SEPARATOR
+        MENUITEM "Window1",                     ID_WINLEVEL_CUSTOM1
+        MENUITEM "Window2",                     ID_WINLEVEL_CUSTOM2
+        MENUITEM "Window3",                     ID_WINLEVEL_CUSTOM3
+        MENUITEM "Window4",                     ID_WINLEVEL_CUSTOM4
+        MENUITEM "Window5",                     ID_WINLEVEL_CUSTOM5
+        MENUITEM "Window6",                     ID_WINLEVEL_CUSTOM6
+        MENUITEM "Window7",                     ID_WINLEVEL_CUSTOM7
+        MENUITEM "Window8",                     ID_WINLEVEL_CUSTOM8
+        MENUITEM "Window9",                     ID_WINLEVEL_CUSTOM9
+        MENUITEM "Window10",                    ID_WINLEVEL_CUSTOM10
+    END
+END
+
+ID_DCMVIEW_RBFUNC2 MENU
+BEGIN
+    POPUP "__ZOOMFACTOR__"
+    BEGIN
+        MENUITEM "自适应",                         ID_ZOOM_AUTO
+        MENUITEM SEPARATOR
+        MENUITEM "原始大小",                        ID_ZOOM_100
+        MENUITEM "1/2大小",                       ID_ZOOM_50
+        MENUITEM "1/4大小",                       ID_ZOOM_25
+        MENUITEM "1.25倍大小",                     ID_ZOOM_125
+        MENUITEM "1.50倍大小",                     ID_ZOOM_150
+        MENUITEM "1.75倍大小",                     ID_ZOOM_175
+        MENUITEM "2.00倍大小",                     ID_ZOOM_200
+        MENUITEM "2.50倍大小",                     ID_ZOOM_250
+        MENUITEM "3.00倍大小",                     ID_ZOOM_300
+    END
+END
+
+ID_DCMVIEW_RBFUNC3 MENU
+BEGIN
+    POPUP "__MEASURE__"
+    BEGIN
+        MENUITEM "线段",                          ID_MEASURE_LINE
+        MENUITEM "椭圆",                          ID_MEASURE_ELLIPSE
+        MENUITEM "矩形",                          ID_MEASURE_RECT
+        MENUITEM "多边形",                         ID_MEASURE_POLYGON
+        MENUITEM "角度",                          ID_MEASURE_ANGLE
+        MENUITEM SEPARATOR
+        MENUITEM "Cobb弯度",                      ID_MEASURE_COBB
+        MENUITEM SEPARATOR
+        MENUITEM "定标",                          ID_MEASURE_CALIBRATE
+    END
+END
+
+ID_DCMVIEW_LBFUNC4 MENU
+BEGIN
+    POPUP "__POPUP__"
+    BEGIN
+        MENUITEM "放大100%",                      ID_MAGNIFY_100
+        MENUITEM "放大200%",                      ID_MAGNIFY_200
+        MENUITEM "放大300%",                      ID_MAGNIFY_300
+        MENUITEM "放大400%",                      ID_MAGNIFY_400
+        MENUITEM "放大800%",                      ID_MAGNIFY_800
+    END
+END
+
+IDR_VIEWIMAGE MENU
+BEGIN
+    POPUP "__POPUP_VIEWIMAGE__"
+    BEGIN
+        MENUITEM "简易版提取影像资料(检查号)",              ID_VIEWIMAGE_MODE1A
+        MENUITEM "简易版提取影像资料(存取号)",              ID_VIEWIMAGE_MODE1B
+        MENUITEM "简易版提取影像资料(影像号+检查日期)",         ID_VIEWIMAGE_MODE1C
+        MENUITEM "简易版提取影像资料(影像号)",              ID_VIEWIMAGE_MODE1D
+        MENUITEM SEPARATOR
+        MENUITEM "Web浏览器版提取影像资料(检查号)",          ID_VIEWIMAGE_MODE2
+        MENUITEM SEPARATOR
+        MENUITEM "专业版提取影像资料(检查号)",              ID_VIEWIMAGE_MODE3A
+        MENUITEM "专业版提取影像资料(存取号)",              ID_VIEWIMAGE_MODE3B
+        MENUITEM "专业版提取影像资料(影像号+检查日期)",         ID_VIEWIMAGE_MODE3C
+        MENUITEM "专业版提取影像资料(影像号)",              ID_VIEWIMAGE_MODE3D
+        MENUITEM SEPARATOR
+        MENUITEM "查看检查结果的原始报告",                 ID_VIEWREPORT_ORIGINAL
+    END
+END
+
+ID_CINE_PLAY MENU
+BEGIN
+    POPUP "__POPUP__"
+    BEGIN
+        MENUITEM "逆向式播放",                       ID_CINE_PLAYR
+        MENUITEM "跳跃式播放",                       ID_CINE_PLAYB
+    END
+END
+
+ID_DCMVIEW_OPTIONS MENU
+BEGIN
+    POPUP "__POPUP__"
+    BEGIN
+        MENUITEM "窗宽/窗位预设值",                    ID_DCMVIEW_OPTIONS_WINLEVEL
+        MENUITEM "窗宽/窗位灵敏度",                    ID_WINLEVEL_SENSITIVITY
+    END
+END
+
+ID_SERIESGO MENU
+BEGIN
+    POPUP "__POPUP__"
+    BEGIN
+        MENUITEM "GoSeries_00",                 ID_SERIESGO_00
+        MENUITEM "GoSeries_01",                 ID_SERIESGO_01
+        MENUITEM "GoSeries_02",                 ID_SERIESGO_02
+        MENUITEM "GoSeries_03",                 ID_SERIESGO_03
+        MENUITEM "GoSeries_04",                 ID_SERIESGO_04
+        MENUITEM "GoSeries_05",                 ID_SERIESGO_05
+        MENUITEM "GoSeries_06",                 ID_SERIESGO_06
+        MENUITEM "GoSeries_07",                 ID_SERIESGO_07
+        MENUITEM "GoSeries_08",                 ID_SERIESGO_08
+        MENUITEM "GoSeries_09",                 ID_SERIESGO_09
+        MENUITEM "GoSeries_10",                 ID_SERIESGO_10
+        MENUITEM "GoSeries_11",                 ID_SERIESGO_11
+        MENUITEM "GoSeries_12",                 ID_SERIESGO_12
+        MENUITEM "GoSeries_13",                 ID_SERIESGO_13
+        MENUITEM "GoSeries_14",                 ID_SERIESGO_14
+        MENUITEM "GoSeries_15",                 ID_SERIESGO_15
+        MENUITEM "GoSeries_16",                 ID_SERIESGO_16
+        MENUITEM "GoSeries_17",                 ID_SERIESGO_17
+        MENUITEM "GoSeries_18",                 ID_SERIESGO_18
+        MENUITEM "GoSeries_19",                 ID_SERIESGO_19
+        MENUITEM "GoSeries_20",                 ID_SERIESGO_20
+        MENUITEM "GoSeries_21",                 ID_SERIESGO_21
+        MENUITEM "GoSeries_22",                 ID_SERIESGO_22
+        MENUITEM "GoSeries_23",                 ID_SERIESGO_23
+        MENUITEM "GoSeries_24",                 ID_SERIESGO_24
+        MENUITEM "GoSeries_25",                 ID_SERIESGO_25
+        MENUITEM "GoSeries_26",                 ID_SERIESGO_26
+        MENUITEM "GoSeries_27",                 ID_SERIESGO_27
+        MENUITEM "GoSeries_28",                 ID_SERIESGO_28
+        MENUITEM "GoSeries_29",                 ID_SERIESGO_29
+        MENUITEM "GoSeries_30",                 ID_SERIESGO_30
+        MENUITEM "GoSeries_31",                 ID_SERIESGO_31
+        MENUITEM "GoSeries_32",                 ID_SERIESGO_32
+        MENUITEM "GoSeries_33",                 ID_SERIESGO_33
+        MENUITEM "GoSeries_34",                 ID_SERIESGO_34
+        MENUITEM "GoSeries_35",                 ID_SERIESGO_35
+        MENUITEM "GoSeries_36",                 ID_SERIESGO_36
+        MENUITEM "GoSeries_37",                 ID_SERIESGO_37
+        MENUITEM "GoSeries_38",                 ID_SERIESGO_38
+        MENUITEM "GoSeries_39",                 ID_SERIESGO_39
+    END
+END
+
+ID_DCMVIEW_COLORMAP MENU
+BEGIN
+    POPUP "__POPUP__"
+    BEGIN
+        MENUITEM "消除伪彩",                        ID_FAKECOLOR_SET0
+        MENUITEM SEPARATOR
+        MENUITEM "伪彩方案1",                       ID_FAKECOLOR_SET1
+        MENUITEM "伪彩方案2",                       ID_FAKECOLOR_SET2
+        MENUITEM "伪彩方案3",                       ID_FAKECOLOR_SET3
+        MENUITEM "伪彩方案4",                       ID_FAKECOLOR_SET4
+        MENUITEM "伪彩方案5",                       ID_FAKECOLOR_SET5
+        MENUITEM "伪彩方案6",                       ID_FAKECOLOR_SET6
+        MENUITEM "伪彩方案7",                       ID_FAKECOLOR_SET7
+        MENUITEM "伪彩方案8",                       ID_FAKECOLOR_SET8
+        MENUITEM "伪彩方案9",                       ID_FAKECOLOR_SET9
+        MENUITEM "伪彩方案A",                       ID_FAKECOLOR_SETA
+        MENUITEM "伪彩方案B",                       ID_FAKECOLOR_SETB
+        MENUITEM "伪彩方案C",                       ID_FAKECOLOR_SETC
+        MENUITEM "伪彩方案D",                       ID_FAKECOLOR_SETD
+    END
+END
+
+IDR_DCMVIEW_POPUPMENU MENU
+BEGIN
+    POPUP "__POPUP___"
+    BEGIN
+        MENUITEM "显示/隐藏文字信息",                   ID_DCMVIEW_OVERLAY
+        MENUITEM SEPARATOR
+        POPUP "鼠标左键功能"
+        BEGIN
+            MENUITEM "功能选择",                        ID_DCMVIEW_LBFUNC0
+            MENUITEM "图像滚动",                        ID_DCMVIEW_LBFUNC1
+            MENUITEM "CT测测量",                       ID_DCMVIEW_LBFUNC3
+            MENUITEM "放大镜",                         ID_DCMVIEW_LBFUNC4
+        END
+        POPUP "鼠标右键功能"
+        BEGIN
+            MENUITEM "窗宽窗位",                        ID_DCMVIEW_RBFUNC1
+            MENUITEM "图像缩放",                        ID_DCMVIEW_RBFUNC2
+            MENUITEM "简单测量",                        ID_DCMVIEW_RBFUNC3
+        END
+        MENUITEM SEPARATOR
+        POPUP "图像翻转"
+        BEGIN
+            MENUITEM "水平翻转",                        ID_DCMVIEW_HFLIP
+            MENUITEM "垂直翻转",                        ID_DCMVIEW_VFLIP
+        END
+        POPUP "图像旋转"
+        BEGIN
+            MENUITEM "顺时针旋转90度",                    ID_DCMVIEW_ROTATE90
+            MENUITEM "逆时针旋转90度",                    ID_DCMVIEW_ROTATE270
+        END
+        POPUP "动态播放"
+        BEGIN
+            MENUITEM "影像播放",                        ID_CINE_PLAY
+            MENUITEM "停止播放",                        ID_CINE_STOP
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "发送当前图像到报告系统",                 ID_DCMVIEW_SENDIMG2RIS
+        MENUITEM SEPARATOR
+        MENUITEM "自动窗宽窗位值",                     ID_WINLEVEL_AUTO
+        MENUITEM SEPARATOR
+        MENUITEM "图像复位",                        ID_DCMVIEW_RESET
+        MENUITEM SEPARATOR
+        MENUITEM "导出图像",                        ID_DCMVIEW_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "查看检查报告",                      ID_DCMVIEW_VIEWREPORT
+        MENUITEM SEPARATOR
+        MENUITEM "影像序列对比",                      ID_DCMIMAGE_COMPARE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CloudERV"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CloudERV Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_IMGLAYOUT DIALOGEX 0, 0, 165, 189
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_CAPTION | WS_SYSMENU
+CAPTION "设置显示窗格"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "",IDC_IMGLAYOUT_LAYOUT1,9,20,36,36,BS_BITMAP,WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_IMGLAYOUT_LAYOUT2,46,20,36,36,BS_BITMAP
+    PUSHBUTTON      "",IDC_IMGLAYOUT_LAYOUT3,83,20,36,36,BS_BITMAP
+    PUSHBUTTON      "",IDC_IMGLAYOUT_LAYOUT10,120,20,36,36,BS_BITMAP
+    PUSHBUTTON      "",IDC_IMGLAYOUT_LAYOUT4,9,57,36,36,BS_BITMAP
+    PUSHBUTTON      "",IDC_IMGLAYOUT_LAYOUT5,46,57,36,36,BS_BITMAP
+    PUSHBUTTON      "",IDC_IMGLAYOUT_LAYOUT6,83,57,36,36,BS_BITMAP
+    PUSHBUTTON      "",IDC_IMGLAYOUT_LAYOUT11,120,57,36,36,BS_BITMAP
+    PUSHBUTTON      "",IDC_IMGLAYOUT_LAYOUT7,9,94,36,36,BS_BITMAP
+    PUSHBUTTON      "",IDC_IMGLAYOUT_LAYOUT8,46,94,36,36,BS_BITMAP
+    PUSHBUTTON      "",IDC_IMGLAYOUT_LAYOUT9,83,94,36,36,BS_BITMAP
+    PUSHBUTTON      "",IDC_IMGLAYOUT_LAYOUT12,120,94,36,36,BS_BITMAP,WS_EX_TRANSPARENT
+    RTEXT           "行数:",IDC_STATIC,13,148,20,8
+    EDITTEXT        IDC_IMGLAYOUT_ROWS,36,147,21,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_IMGLAYOUT_SPINROWS,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,57,146,10,14
+    RTEXT           "列数:",IDC_STATIC,13,167,20,8
+    EDITTEXT        IDC_IMGLAYOUT_COLS,36,165,21,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_IMGLAYOUT_SPINCOLS,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,57,164,10,14
+    PUSHBUTTON      "应用",IDC_IMGLAYOUT_APPLY,76,151,41,15,BS_FLAT
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,6,141,153,42
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,6,16,153,121
+    LTEXT           "序列：",IDC_IMGLAYOUT_LABEL,8,4,76,8
+END
+
+IDD_PUBLISHEDREPORT DIALOGEX 0, 0, 221, 214
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 11, "宋体", 400, 0, 0x86
+BEGIN
+    RTEXT           "查询日期 - 从:",IDC_LBL_REPORTDATEFROM,3,11,56,8
+    CONTROL         "",IDC_CTL_REPORTDATEFROM,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,62,8,74,15
+    RTEXT           "到:",IDC_LBL_REPORTDATETO,4,28,55,8
+    CONTROL         "",IDC_CTL_REPORTDATETO,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,62,25,74,15
+    RTEXT           "检查类型:",IDC_LBL_EXAMTYPE,6,57,53,8
+    COMBOBOX        IDC_CBO_EXAMTYPE,62,54,74,139,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "检索项目:",IDC_LBL_FIELDNAME,25,85,35,8
+    COMBOBOX        IDC_CBO_FIELDNAME,62,82,74,113,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "=",IDC_LBL_FIELDVALUE,138,84,8,8
+    EDITTEXT        IDC_EDT_FIELDVALUE,148,81,68,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LINE1,"Static",SS_ETCHEDHORZ,6,102,211,1
+    CONTROL         "",IDC_GRD_RESULT,"XTPReport",WS_BORDER | WS_TABSTOP,4,105,212,100
+    CONTROL         "平台数据",IDC_BTN_HCS,"Button",BS_AUTORADIOBUTTON,149,11,38,10
+    CONTROL         "子系统数据",IDC_BTN_XIS,"Button",BS_AUTORADIOBUTTON,149,24,49,10
+    LTEXT           "从子系统查询时，放射用拍片日期查询，其他查询用报告日期。查询结果中可能有未完成的记录。",IDC_LBL_NOTE,143,38,71,40
+END
+
+IDD_CALIBRATE DIALOGEX 0, 0, 192, 53
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "测量定标"
+FONT 10, "宋体", 400, 0, 0x86
+BEGIN
+    EDITTEXT        IDC_VALUE,106,6,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "确认",IDOK,42,33,50,14
+    PUSHBUTTON      "取消",IDCANCEL,108,33,50,14
+    RTEXT           "请输入线段长度(毫米):",IDC_STATIC,0,8,91,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,25,191,1
+END
+
+IDD_MSGBOX DIALOG 0, 0, 316, 31
+STYLE DS_SETFONT | WS_CAPTION
+CAPTION "提示信息"
+FONT 11, "宋体"
+BEGIN
+    CONTROL         "",IDC_MSG,"Static",SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP,2,2,309,25
+END
+
+IDD_WINLEVEL DIALOGEX 0, 0, 188, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "窗宽/窗位"
+FONT 11, "宋体", 0, 0, 0x0
+BEGIN
+    RTEXT           "窗宽值:",IDC_STATIC,34,21,36,9
+    EDITTEXT        IDC_WINLEVEL_WID,74,18,52,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_WINLEVEL_SPINWID,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,126,17,10,14
+    RTEXT           "窗位值:",IDC_STATIC,32,40,38,8
+    EDITTEXT        IDC_WINLEVEL_CEN,74,37,52,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",IDC_WINLEVEL_SPINCEN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,126,36,10,14
+    PUSHBUTTON      "应用",IDC_WINLEVEL_APPLY,29,81,50,14
+    PUSHBUTTON      "取消",IDCANCEL,101,81,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,3,68,184,1
+END
+
+IDD_MEDICALRESULT DIALOGEX 0, 0, 312, 200
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 11, "宋体", 400, 0, 0x86
+BEGIN
+    CONTROL         "",IDC_LINE1,"Static",SS_ETCHEDHORZ,4,21,287,1
+    LTEXT           "患者姓名",IDC_LBL_PATIENTNAME,6,27,35,8
+    LTEXT           "",IDC_TXT_PATIENTNAME,42,24,58,14,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "性    别",IDC_LBL_PATIENTSEX,111,27,33,8
+    LTEXT           "Static",IDC_TXT_PATIENTSEX,148,24,23,15,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "年    龄",IDC_LBL_PATIENTAGE,196,26,32,8
+    LTEXT           "Static",IDC_TXT_PATIENTAGE,232,24,25,15,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "住 院 号",IDC_LBL_INPATIENTNO,6,43,32,8
+    LTEXT           "Static",IDC_TXT_INPATIENTNO,42,40,58,14,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "检查项目",IDC_LBL_STUDYDETAILS,112,59,34,8
+    LTEXT           "Static",IDC_TXT_STUDYDETAILS,148,56,143,13,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "床    号",IDC_LBL_BEDNO,111,43,35,8
+    LTEXT           "Static",IDC_TXT_BEDNO,148,40,23,13,SS_CENTERIMAGE | SS_SUNKEN,WS_EX_STATICEDGE
+    LTEXT           "影像所见",IDC_LBL_FINDINGS,6,75,35,8
+    EDITTEXT        IDC_EDT_FINDINGS,42,72,250,35,ES_MULTILINE | ES_READONLY | WS_VSCROLL,WS_EX_STATICEDGE
+    LTEXT           "诊断意见",IDC_LBL_CONCLUSIONS,6,116,35,8
+    EDITTEXT        IDC_EDT_CONCLUSIONS,42,110,250,29,ES_MULTILINE | ES_READONLY | WS_VSCROLL,WS_EX_STATICEDGE
+    LTEXT           "报告日期",IDC_LBL_REPORTDATE,6,163,34,8
+    LTEXT           "Static",IDC_TXT_REPORTDATE,42,160,42,15,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "报告医师",IDC_LBL_REPORTDOCTORNAME,87,163,32,8
+    LTEXT           "Static",IDC_TXT_REPORTDOCTORNAME,125,160,44,15,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "检查日期",IDC_LBL_STUDYDATE,6,59,35,8
+    LTEXT           "",IDC_TXT_STUDYDATE,42,56,58,14,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "",IDC_TXT_TITLE,20,7,256,10,SS_CENTERIMAGE
+    LTEXT           "结果定性",IDC_LBL_POSITIVEFLAG,169,164,32,8
+    LTEXT           "Static",IDC_TXT_POSITIVEFLAG,204,162,24,15,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "审核日期",IDC_LBL_REVIEWDATE,5,180,32,8
+    LTEXT           "Static",IDC_TXT_REVIEWDATE,42,177,42,15,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "审核医师",IDC_LBL_REVIEWDOCTORNAME,87,180,32,8
+    LTEXT           "Static",IDC_TXT_REVIEWDOCTORNAME,125,177,44,15,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "影 像 号",IDC_LBL_DOCID,196,43,32,8
+    LTEXT           "Static",IDC_TXT_DOCID,232,40,59,13,SS_CENTERIMAGE | SS_SUNKEN,WS_EX_STATICEDGE
+    LTEXT           "危急值",IDC_LBL_CRITICALFLAG,173,181,24,8
+    LTEXT           "Static",IDC_TXT_CRITICALFLAG,205,178,24,15,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "传染性疾病",IDC_LBL_INFECTIOUSFLAG,232,164,41,8
+    LTEXT           "",IDC_TXT_INFECTIOUSFLAG,272,161,24,15,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "建议补增强",IDC_LBL_ENHANCEDFLAG,232,180,41,8
+    LTEXT           "",IDC_TXT_ENHANCEDFLAG,272,178,24,15,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Static",IDC_TXT_WARNCONTENT,43,142,253,15,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "危急内容",IDC_LBL_WARNCONTENT,5,145,35,11
+END
+
+IDD_PROGRESS DIALOGEX 0, 0, 260, 39
+STYLE DS_SETFONT | WS_CAPTION
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    CTEXT           "",IDC_MSG,0,1,258,13,SS_CENTERIMAGE
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,0,19,258,14
+END
+
+IDD_OPTIONS_WINLEVEL DIALOGEX 0, 0, 263, 224
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自定义窗宽窗位值"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    RTEXT           "窗-01:",IDC_STATIC,14,24,37,11,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_NAME1,59,23,97,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH1,165,23,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CENTER1,202,23,32,12,ES_AUTOHSCROLL
+    RTEXT           "窗-02:",IDC_STATIC,14,39,37,11,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_NAME2,59,38,97,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH2,165,38,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CENTER2,202,38,32,12,ES_AUTOHSCROLL
+    RTEXT           "窗-03:",IDC_STATIC,14,53,37,11,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_NAME3,59,52,97,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH3,165,52,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CENTER3,202,52,32,12,ES_AUTOHSCROLL
+    RTEXT           "窗-04:",IDC_STATIC,14,66,37,11,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_NAME4,59,65,97,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH4,165,65,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CENTER4,202,65,32,12,ES_AUTOHSCROLL
+    RTEXT           "窗-05:",IDC_STATIC,14,80,37,11,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_NAME5,59,79,97,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH5,165,79,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CENTER5,202,79,32,12,ES_AUTOHSCROLL
+    RTEXT           "窗-06:",IDC_STATIC,14,94,37,11,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_NAME6,59,93,97,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH6,165,93,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CENTER6,202,93,32,12,ES_AUTOHSCROLL
+    RTEXT           "窗-07:",IDC_STATIC,14,107,37,11,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_NAME7,59,106,97,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH7,165,106,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CENTER7,202,106,32,12,ES_AUTOHSCROLL
+    RTEXT           "窗-08:",IDC_STATIC,15,123,37,11,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_NAME8,60,122,97,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH8,165,122,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CENTER8,203,122,32,12,ES_AUTOHSCROLL
+    RTEXT           "窗-09:",IDC_STATIC,15,138,37,11,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_NAME9,60,137,97,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH9,165,137,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CENTER9,203,137,32,12,ES_AUTOHSCROLL
+    RTEXT           "窗-10:",IDC_STATIC,15,154,37,11,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_NAME10,60,153,97,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WIDTH10,165,153,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CENTER10,203,153,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "确认",IDC_APPLY,59,197,50,14
+    PUSHBUTTON      "取消",IDCANCEL,144,197,50,14
+    LTEXT           "序号",IDC_STATIC,33,11,16,8
+    LTEXT           "名称",IDC_STATIC,59,11,16,8
+    LTEXT           "窗宽",IDC_STATIC,166,10,16,8
+    LTEXT           "窗位",IDC_STATIC,204,10,16,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,1,186,262,1
+    LTEXT           "窗01、窗02...窗10分别用ALT + 0、ALT + 1、。。。ALT + 9 快捷键",IDC_STATIC,11,173,238,8
+END
+
+IDD_PRESETWL DIALOGEX 0, 0, 267, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "人体常见组织窗宽窗位参考"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,6,24,253,188
+    RTEXT           "窗宽/位值选择:",IDC_VALUELBL,5,8,62,10
+    CONTROL         "最小值",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | BS_FLAT,72,7,39,10
+    CONTROL         "中间值",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | BS_FLAT,113,7,38,10
+    CONTROL         "最大值",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | BS_FLAT,153,7,38,10
+END
+
+IDD_SENSITIVITY DIALOGEX 0, 0, 151, 37
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "窗宽/窗位灵敏度"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,93,13,50,14
+    EDITTEXT        IDC_VALUE,18,12,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,56,12,11,14
+END
+
+IDD_ENCODESTR DIALOGEX 0, 0, 382, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "字符串加密"
+FONT 10, "宋体", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "关闭窗口",IDOK,280,162,80,14
+    RTEXT           "要加密的字符串:",IDC_STATIC,7,25,71,8
+    EDITTEXT        IDC_EDITSTR,82,22,181,14,ES_AUTOHSCROLL
+    RTEXT           "加密后的文本:",IDC_STATIC,7,49,71,8
+    EDITTEXT        IDC_ENCODESTR,83,50,292,55,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    PUSHBUTTON      "加密",IDC_ENCODE,279,22,80,14
+END
+
+IDD_BOOKINGOFRIS DIALOGEX 0, 0, 487, 320
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_NOINHERITLAYOUT
+FONT 11, "宋体", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_GRID_BOOKINGINFO,"XTPReport",WS_BORDER | WS_TABSTOP,13,209,462,102
+    CONTROL         "",IDC_DATEPICKER,"XTPDatePicker",WS_BORDER | WS_TABSTOP,14,87,224,100
+    GROUPBOX        "有效预约日期",IDC_GRPBOX_DATES,7,73,238,121,BS_CENTER
+    GROUPBOX        "全部资源组信息",IDC_GRPBOX_QUEUEGROUPS,251,73,228,121,BS_CENTER
+    GROUPBOX        "资源组可预约信息",IDC_GRPBOX_BOOKINGINFO,7,198,472,116,BS_CENTER
+    CONTROL         "",IDC_GRID_QUEUEGROUPS,"XTPReport",WS_BORDER | WS_TABSTOP,256,86,219,102
+    GROUPBOX        "检查登记与预约信息",IDC_GRPBOX_REGISTERINFO,7,4,472,65,BS_CENTER
+    LTEXT           "申请单号:",IDC_LBL_ORDERNO,10,15,35,8
+    LTEXT           "Static",IDC_TXT_ORDERNO,49,13,87,13,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "检查类型:",IDC_LBL_EXAMTYPE,149,15,35,8
+    LTEXT           "Static",IDC_TXT_EXAMTYPE,188,13,36,13,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "患者姓名:",IDC_LBL_PATIENTNAME,250,15,35,8
+    LTEXT           "Static",IDC_TXT_PATIENTNAME,288,13,59,13,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "检查项目:",IDC_LBL_SERVICENAMES,10,31,35,8
+    EDITTEXT        IDC_TXT_SERVICENAMES,49,28,424,16,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "预约日期:",IDC_LBL_SCHEDULEDATE,121,55,37,8
+    CTEXT           "Static",IDC_TXT_SCHEDULEDATE,159,52,60,14,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "资源组代码:",IDC_LBL_QUEUEGROUPID,11,55,43,8
+    CTEXT           "Static",IDC_TXT_QUEUEGROUPID,56,52,50,14,SS_CENTERIMAGE | WS_BORDER
+    CONTROL         "",IDC_LINE1,"Static",SS_ETCHEDHORZ,10,48,467,1
+    LTEXT           "预约时间:",IDC_LBL_SCHEDULETIME,235,55,35,8
+    CTEXT           "Static",IDC_TXT_SCHEDULETIME,274,52,50,14,SS_CENTERIMAGE | WS_BORDER
+END
+
+IDD_BOOKINGOFUIS DIALOGEX 0, 0, 288, 179
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 11, "宋体", 400, 0, 0x0
+BEGIN
+END
+
+IDD_BOOKINGOFEIS DIALOGEX 0, 0, 308, 158
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 11, "宋体", 400, 0, 0x0
+BEGIN
+END
+
+IDD_NEWBOOKING DIALOGEX 0, 0, 228, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "放射检查预约"
+FONT 11, "宋体", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_VALUE,67,27,143,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确认",IDOK,113,66,50,14
+    PUSHBUTTON      "取消",IDCANCEL,171,66,50,14
+    LTEXT           "请输入放射检查申请单号或扫描申请单条码:",IDC_STATIC,7,8,148,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,2,58,225,1
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,75
+ PRODUCTVERSION 1,0,0,6
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "00000409"
+        BEGIN
+            VALUE "CompanyName", "Guangdong Zhongbang Tech & Info. Co. Ltd"
+            VALUE "FileDescription", "CloudERV"
+            VALUE "FileVersion", "1.0.0.75"
+            VALUE "InternalName", "CloudERV.exe"
+            VALUE "LegalCopyright", "Guangdong Zhongbang Tech & Info. Co. Ltd.  All rights reserved."
+            VALUE "OriginalFilename", "CloudERV.exe"
+            VALUE "ProductName", "CloudPACS"
+            VALUE "ProductVersion", "1.0.0.6"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1033
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_IMGLAYOUT, DIALOG
+    BEGIN
+    END
+
+    IDD_PUBLISHEDREPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_CALIBRATE, DIALOG
+    BEGIN
+    END
+
+    IDD_MSGBOX, DIALOG
+    BEGIN
+    END
+
+    IDD_WINLEVEL, DIALOG
+    BEGIN
+    END
+
+    IDD_MEDICALRESULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 309
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 37
+    END
+
+    IDD_OPTIONS_WINLEVEL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_PRESETWL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_SENSITIVITY, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 143
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_ENCODESTR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 375
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_BOOKINGOFRIS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 479
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 314
+    END
+
+    IDD_BOOKINGOFUIS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_BOOKINGOFEIS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 301
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_NEWBOOKING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MINITOOLBAR TOOLBAR 33, 33
+BEGIN
+    BUTTON      ID_DCMVIEW_FULLSCREEN
+    BUTTON      ID_DCMVIEW_SERIESMODE
+    BUTTON      ID_DCMVIEW_IMGLAYOUT
+    BUTTON      ID_DCMVIEW_OVERLAY
+    BUTTON      ID_DCMVIEW_LBFUNC0
+    BUTTON      ID_DCMVIEW_LBFUNC2
+    BUTTON      ID_DCMVIEW_LBFUNC3
+    BUTTON      ID_DCMVIEW_LBFUNC4
+    BUTTON      ID_DCMVIEW_RBFUNC0
+    BUTTON      ID_DCMVIEW_RBFUNC1
+    BUTTON      ID_DCMVIEW_RBFUNC2
+    BUTTON      ID_DCMVIEW_RBFUNC3
+    BUTTON      ID_DCMVIEW_FILTER_SMOOTH3
+    BUTTON      ID_DCMVIEW_RESET
+END
+
+IDR_PDFREPORT TOOLBAR 20, 20
+BEGIN
+    BUTTON      ID_PDFREPORT_ZOOMIN
+    SEPARATOR
+    BUTTON      ID_PDFREPORT_ZOOMOUT
+    SEPARATOR
+    BUTTON      ID_PDFREPORT_PREVPAGE
+    SEPARATOR
+    BUTTON      ID_PDFREPORT_NEXTPAGE
+    SEPARATOR
+    BUTTON      ID_PDFREPORT_PRINT
+    SEPARATOR
+    BUTTON      ID_PDFREPORT_EXPORT
+    SEPARATOR
+    BUTTON      ID_CHILDFRAME_CLOSE
+END
+
+IDR_PUBLISHEDREPORT TOOLBAR 20, 20
+BEGIN
+    BUTTON      ID_MEDICALRESULT_FIND
+    SEPARATOR
+    BUTTON      ID_MEDICALRESULT_VIEWIMAGES
+    SEPARATOR
+    BUTTON      ID_VIEWREPORT_ORIGINAL
+    SEPARATOR
+    BUTTON      ID_MEDICALRESULT_SAVEPOS1
+    SEPARATOR
+    BUTTON      ID_MEDICALRESULT_CLOSE
+END
+
+IDR_DCMIMAGE TOOLBAR 33, 33
+BEGIN
+    BUTTON      ID_DCMVIEW_SERIESMODE
+    BUTTON      ID_SERIESGO
+    SEPARATOR
+    BUTTON      ID_DCMVIEW_IMGLAYOUT
+    BUTTON      ID_DCMVIEW_OVERLAY
+    BUTTON      ID_DCMVIEW_LBFUNC0
+    BUTTON      ID_DCMVIEW_LBFUNC1
+    BUTTON      ID_DCMVIEW_LBFUNC2
+    BUTTON      ID_DCMVIEW_LBFUNC3
+    BUTTON      ID_DCMVIEW_LBFUNC4
+    BUTTON      ID_DCMVIEW_RBFUNC1
+    BUTTON      ID_DCMVIEW_RBFUNC2
+    BUTTON      ID_DCMVIEW_RBFUNC3
+    BUTTON      ID_DCMVIEW_COLORMAP
+    BUTTON      ID_CINE_PREV
+    BUTTON      ID_CINE_NEXT
+    BUTTON      ID_CINE_PLAY
+    BUTTON      ID_CINE_STOP
+    SEPARATOR
+    BUTTON      ID_DCMVIEW_HFLIP
+    BUTTON      ID_DCMVIEW_VFLIP
+    BUTTON      ID_DCMVIEW_ROTATE90
+    BUTTON      ID_DCMVIEW_ROTATE270
+    BUTTON      ID_DCMVIEW_FILTER_SMOOTH3
+    BUTTON      ID_DCMVIEW_FILTER_CLEAR
+    SEPARATOR
+    BUTTON      ID_DCMVIEW_RESET
+    SEPARATOR
+    BUTTON      ID_DCMVIEW_VIEWREPORT
+    SEPARATOR
+    BUTTON      ID_DCMVIEW_OPTIONS
+    BUTTON      ID_CHILDFRAME_CLOSE
+END
+
+IDR_BOOKINGOFRIS TOOLBAR 20, 20
+BEGIN
+    BUTTON      ID_BOOKINGRIS_NEW
+    SEPARATOR
+    BUTTON      ID_BOOKINGRIS_APPLY
+    BUTTON      ID_BOOKINGRIS_CANCEL
+    SEPARATOR
+    BUTTON      ID_BOOKINGRIS_QUERY
+    SEPARATOR
+    BUTTON      ID_BOOKINGRIS_RETURN
+    SEPARATOR
+    BUTTON      ID_CHILDFRAME_CLOSE
+END
+
+IDR_BITMAPVIEWER TOOLBAR 20, 20
+BEGIN
+    BUTTON      ID_BMPVIEWER_FITWIDTH
+    SEPARATOR
+    BUTTON      ID_BMPVIEWER_FITWINDOW
+    SEPARATOR
+    BUTTON      ID_BMPVIEWER_ORIGINALSIZE
+    SEPARATOR
+    BUTTON      ID_BMPVIEWER_ZOOMIN
+    SEPARATOR
+    BUTTON      ID_BMPVIEWER_ZOOMOUT
+    SEPARATOR
+    BUTTON      ID_BMPVIEWER_MOVETOPREV
+    SEPARATOR
+    BUTTON      ID_BMPVIEWER_MOVETONEXT
+    SEPARATOR
+    BUTTON      ID_BMPVIEWER_PRINT
+    SEPARATOR
+    BUTTON      ID_CHILDFRAME_CLOSE
+END
+
+IDR_DCMSERIESCMP TOOLBAR 33, 33
+BEGIN
+    BUTTON      ID_DCMVIEW_OVERLAY
+    BUTTON      ID_DCMVIEW_LBFUNC0
+    BUTTON      ID_DCMVIEW_LBFUNC1
+    BUTTON      ID_DCMVIEW_LBFUNC2
+    BUTTON      ID_DCMVIEW_LBFUNC3
+    BUTTON      ID_DCMVIEW_LBFUNC4
+    BUTTON      ID_DCMVIEW_RBFUNC1
+    BUTTON      ID_DCMVIEW_RBFUNC2
+    BUTTON      ID_DCMVIEW_RBFUNC3
+    BUTTON      ID_DCMVIEW_COLORMAP
+    BUTTON      ID_CINE_PREV
+    BUTTON      ID_CINE_NEXT
+    BUTTON      ID_CINE_PLAY
+    BUTTON      ID_CINE_STOP
+    SEPARATOR
+    BUTTON      ID_DCMVIEW_HFLIP
+    BUTTON      ID_DCMVIEW_VFLIP
+    BUTTON      ID_DCMVIEW_ROTATE90
+    BUTTON      ID_DCMVIEW_ROTATE270
+    BUTTON      ID_DCMVIEW_FILTER_SMOOTH3
+    BUTTON      ID_DCMVIEW_FILTER_CLEAR
+    SEPARATOR
+    BUTTON      ID_DCMVIEW_RESET
+    SEPARATOR
+    BUTTON      ID_CHILDFRAME_CLOSE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_DCMIMAGE_ZOOM       CURSOR                  "res\\zoom.cur"
+IDC_DCMIMAGE_MEASURE    CURSOR                  "res\\measure.cur"
+IDC_DCMIMAGE_MOVE       CURSOR                  "res\\move.cur"
+IDC_DCMIMAGE_SCROLL     CURSOR                  "res\\scroll.cur"
+IDC_DCMIMAGE_WINLEVEL   CURSOR                  "res\\winlevel.cur"
+IDC_CURSOR_HAND         CURSOR                  "res\\hand.cur"
+IDC_CURSOR_HANDDRAG     CURSOR                  "res\\handdrag.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "临床医生查询工作站"
+    IDR_CloudERVTYPE        "\nCloudERV\nCloudERV\n\n\nCloudERV.Document\nCloudERV.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "临床医生查询工作站"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CHILDFRAME_CLOSE     "关闭当前窗口\n关闭窗口"
+    ID_PDFREPORT_ZOOMIN     "放大显示\n放大显示"
+    ID_PDFREPORT_ZOOMOUT    "缩小显示\n缩小显示"
+    ID_PDFREPORT_PREVPAGE   "显示上一页\n上一页"
+    ID_PDFREPORT_NEXTPAGE   "显示下一页\n下一页"
+    ID_PDFREPORT_PRINT      "输出到打印机\n打印输出"
+    ID_PDFREPORT_EXPORT     "导出到本地磁盘文件\n导出文件"
+    ID_DCMVIEW_SERIESMODE   "序列图方式显示（类似于缩略图方式）\n序列图像"
+END
+
+STRINGTABLE
+BEGIN
+    ID_DCMVIEW_RESET        "图像复位"
+    ID_DCMVIEW_VIEWREPORT   "转到报告界面\n检查报告"
+    ID_DCMVIEW_IMGLAYOUT    "设置显示窗格\n设置显示窗格"
+    ID_DCMVIEW_OVERLAY      "显示/隐藏文字信息\n显示/隐藏文字信息"
+    ID_DCMVIEW_LBFUNC0      "按下左键时，选择当前影像\n左键功能=选择"
+    ID_DCMVIEW_LBFUNC1      "按下左键时，改变序列影像中的当前影像序号\n左键功能=滚动"
+    ID_DCMVIEW_LBFUNC2      "影像平移\n左键功能=平移"
+    ID_DCMVIEW_LBFUNC3      "显示当前点的CT/MR值\n左键功能=CT/MR值"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MR_FIND              "\n执行查询"
+    ID_MEDICALRESULT_FIND   "查询影像检查报告\n执行查询"
+    ID_MEDICALRESULT_CLOSE  "关闭当前窗口\n关闭窗口"
+    ID_MEDICALRESULT_VIEWIMAGES "查看影像资料\n影像资料"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEWIMAGE_MODE3      "根据检查实例UID(StudyUID)用专业版影像浏览器查阅病人的影像资料"
+    ID_CINE_PREV            "动态影像上一幅图\n动态影像上一帧"
+    ID_CINE_NEXT            "动态影像下一幅图\n动态影像下一帧"
+    ID_CINE_PLAY            "动态影像播放\n动态影像播放"
+    ID_CINE_STOP            "动态影像停止播放\n动态影像停止播放"
+    ID_VIEWREPORT           "转到报告界面\n检查报告"
+END
+
+STRINGTABLE
+BEGIN
+    ID_DCMVIEW_LBFUNC4      "影像局部放大\n左键功能=放大镜"
+    ID_DCMVIEW_RBFUNC0      "按下右键时，弹出菜单\n右键功能=弹出菜单"
+    ID_DCMVIEW_RBFUNC1      "按下鼠标右键并移动时改变窗宽窗位值\n右键功能=窗宽窗位调节"
+    ID_DCMVIEW_RBFUNC2      "按下鼠标右键并移动时缩放影像\n右键功能=影像无级缩放"
+    ID_DCMVIEW_RBFUNC3      "按下鼠标右键并移动时做简单测量\n右键功能=测量"
+    ID_DCMVIEW_HFLIP        "水平翻转\n水平翻转"
+    ID_DCMVIEW_VFLIP        "垂直翻转\n垂直翻转"
+    ID_DCMVIEW_ROTATE90     "顺时针旋转90度\n顺时针旋转90度"
+    ID_DCMVIEW_ROTATE270    "逆时针旋转90度\n逆时针旋转90度"
+    ID_DCMVIEW_FILTER_SMOOTH3 "高斯低通滤波\n高斯低通滤波"
+    ID_DCMVIEW_FILTER_CLEAR "清除滤波器\n清除滤波器"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SERIESGO             "选择并显示序列影像\n选择并显示序列影像"
+END
+
+STRINGTABLE
+BEGIN
+    ID_DCMVIEW_FAKECOLOR    "灰阶图像加伪彩\n伪彩"
+END
+
+STRINGTABLE
+BEGIN
+    ID_DCMIMAGEVIEW_COLORMAP "灰阶图像增加伪彩\n伪彩"
+    ID_DCMVIEW_COLORMAP     "灰阶图像添加伪彩\n伪彩"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEWIMAGE_MODE1A     "根据检查实例UID(StudyUID)用简易版影像浏览器查阅病人的影像资料"
+    32956                   "根据存取号(AccessionNumber)用简易版影像浏览器查阅病人的影像资料"
+    ID_VIEWIMAGE_MODE1C     "根据影像号+检查日期用简易版影像浏览器查阅病人的影像资料， 可能查出不同设备类别的影像资料"
+    ID_VIEWIMAGE_MODE1D     "根据影像号用简易版影像浏览器查阅病人的影像资料"
+    ID_VIEWIMAGE_MODE3A     "根据检查实例UID(StudyUID)用专业版影像浏览器查阅病人的影像资料"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEWIMAGE_MODE3B     "根据存取号用专业版影像浏览器查阅病人的影像资料"
+    ID_VIEWIMAGE_MODE3C     "根据影像号+检查日期用专业版影像浏览器查阅病人的影像资料"
+    ID_VIEWIMAGE_MODE3D     "根据影像号用专业版影像浏览器查阅病人的影像资料"
+    ID_DCMVIEW_EXPORT       "导出JPEG格式的图像"
+    ID_BOOKINGRIS_QUERY     "查询放射检查预约信息\n数据刷新"
+    ID_BOOKINGRIS_NEW       "预约下一个病人\n预约下一个"
+    ID_BOOKINGRIS_APPLY     "确认并提交当前预约信息\n预约确认"
+    ID_BOOKINGRIS_CANCEL    "取消当前预约信息\n取消预约"
+    ID_BOOKINGRIS_RETURN    "返回到HIS/EMR调用程序\n返回HIS/EMR"
+    ID_VIEWREPORT_ORIGINAL  "查看检查结果的原始报告\n原始报告"
+    ID_BMPVIEWER_FITWIDTH   "适应窗口宽度\n窗口宽度"
+    ID_BMPVIEWER_FITWINDOW  "适应窗口大小\n适应窗口"
+    ID_BMPVIEWER_ORIGINALSIZE "原始图像大小\n原始大小"
+    ID_BMPVIEWER_ZOOMIN     "图像放大显示\n图像放大"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BMPVIEWER_ZOOMOUT    "图像缩小显示\n图像缩小"
+    ID_BMPVIEWER_MOVETOPREV "显示下一幅图像\n上一幅图"
+    ID_BMPVIEWER_MOVETONEXT "显示下一幅图像\n下一幅图"
+    ID_BMPVIEWER_PRINT      "以满页的方式打印输出\n打印输出"
+    ID_MEDICALRESULT_SAVEPOS1 "保存查询结果列表的列宽设置\n保存列表列宽设置"
+    ID_DCMIMAGE_COMPARE     "比较两个序列的图像"
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\CloudERV.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"    // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CloudERV", "CloudERV.vcxproj", "{07B91A75-D123-4400-AE00-172A3E66156F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07B91A75-D123-4400-AE00-172A3E66156F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{07B91A75-D123-4400-AE00-172A3E66156F}.Debug|Win32.Build.0 = Debug|Win32
+		{07B91A75-D123-4400-AE00-172A3E66156F}.Release|Win32.ActiveCfg = Release|Win32
+		{07B91A75-D123-4400-AE00-172A3E66156F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

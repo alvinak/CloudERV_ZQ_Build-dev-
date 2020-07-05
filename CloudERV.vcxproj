@@ -194,6 +194,7 @@
     <ClInclude Include="BitmapViewerView.h" />
     <ClInclude Include="DcmSeriesCompareDoc.h" />
     <ClInclude Include="JPEGIJG.H" />
+    <ClInclude Include="LoginDlg.h" />
     <ClInclude Include="MagnifyWnd.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="MedicalResultObject.h" />
@@ -260,6 +261,7 @@
     <ClCompile Include="BitmapViewerView.cpp" />
     <ClCompile Include="DcmSeriesCompareDoc.cpp" />
     <ClCompile Include="JPEGIJG.CPP" />
+    <ClCompile Include="LoginDlg.cpp" />
     <ClCompile Include="MagnifyWnd.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="MedicalResultObject.cpp" />

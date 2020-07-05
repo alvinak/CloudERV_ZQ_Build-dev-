@@ -73,3 +73,4 @@
 #include "resource.h"
 #include <afxdisp.h>
 #include <afxhtml.h>
+#include <afxcontrolbars.h>

@@ -708,6 +708,19 @@ BEGIN
     CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,2,58,225,1
 END
 
+IDD_LOGIN DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "临床医生查询工作站登录"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "用户代码：",IDC_STATIC,50,46,41,8
+    LTEXT           "操作密码：",IDC_STATIC,50,74,41,8
+    EDITTEXT        IDC_EDIT_UserID,142,46,88,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Password,142,74,88,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "登录",IDC_BTN_LOGIN,61,125,50,14
+    PUSHBUTTON      "取消",IDC_BTN_CANCEL,155,125,50,14
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -863,6 +876,14 @@ BEGIN
         RIGHTMARGIN, 221
         TOPMARGIN, 7
         BOTTOMMARGIN, 80
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
     END
 END
 #endif    // APSTUDIO_INVOKED

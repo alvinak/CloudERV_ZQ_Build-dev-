@@ -119,6 +119,7 @@
 
 #include "curl\curl.h"
 
+#include "LoginDlg.h"
 
 //
 // 新老ImageViewer的接口不同
@@ -2200,6 +2201,12 @@ int	  CCloudERVApp::GetInifileInt(const TCHAR *szSectionName, const TCHAR *szKey
 
 BOOL CCloudERVApp::InitInstance()
 {
+
+	//创建登录窗口并以模态方式创建
+	CLoginDlg dlg;
+	dlg.DoModal ();
+
+
 	HWND    hPrevWnd;
 	CCmdLineInfo cmdInfo;
 	BOOL bSendOk;
@@ -2244,6 +2251,8 @@ BOOL CCloudERVApp::InitInstance()
         return FALSE;
   
 	AfxEnableControlContainer();
+
+	
 
 	CWinApp::InitInstance();
 	WSAStartup(winSockVersionNeeded, &winSockData);

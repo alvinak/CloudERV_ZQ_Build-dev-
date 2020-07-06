@@ -477,6 +477,26 @@ const TCHAR * CSystemConfiguration::GetRISStudiesTableName()
 }
 
 
+
+	const TCHAR * CSystemConfiguration::GetUsersTableName()
+{
+	int nIndex = -1;
+	CString sDBSchema("");
+
+	nIndex = GetSystemInfoIndex(_T("CloudERV"), _T(""));
+	if (nIndex >= 0)
+		sDBSchema = m_ServerInfo[nIndex].DBSchema;
+
+	if (sDBSchema.IsEmpty())
+		m_sTableNameX = _T("Users");
+	else
+		m_sTableNameX.Format(_T("%s.%s"), sDBSchema, _T("Users"));
+
+	return m_sTableNameX;
+}
+
+
+
 const TCHAR * CSystemConfiguration::GetCloudERVDBName()
 {
 	int nIndex = -1;

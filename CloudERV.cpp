@@ -2202,9 +2202,9 @@ int	  CCloudERVApp::GetInifileInt(const TCHAR *szSectionName, const TCHAR *szKey
 BOOL CCloudERVApp::InitInstance()
 {
 
-	//创建登录窗口并以模态方式创建
-	CLoginDlg dlg;
-	dlg.DoModal ();
+	////创建登录窗口并以模态方式创建
+	//CLoginDlg dlg;
+	//dlg.DoModal ();
 
 
 	HWND    hPrevWnd;

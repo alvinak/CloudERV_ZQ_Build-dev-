@@ -94,5 +94,7 @@ public:
 	CString m_sReportFileUrls;
 	CString m_sPDFPassword;
 
+	CString m_sStudyID;
+
 };
 

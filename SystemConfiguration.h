@@ -34,7 +34,6 @@ public:
 	const TCHAR *GetMedicalResultTableName();
 	const TCHAR *GetRISQueueGroupsTableName();
 	const TCHAR *GetRISStudiesTableName();
-	const TCHAR *GetUsersTableName();
 
 	const TCHAR *GetCloudERVDBName();
 	const TCHAR *GetCloudERVDBUserId();

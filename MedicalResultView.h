@@ -36,6 +36,7 @@ public:
 	CStatic m_txtPatientName;
 	CStatic m_txtPatientSex;
 	CStatic m_txtPatientAge;
+	CStatic m_txtOrderNo;
 	CStatic	m_txtDocID;
 	CStatic m_txtInpatientNo;
 	CStatic m_txtBedNo;

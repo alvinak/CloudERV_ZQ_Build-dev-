@@ -34,6 +34,7 @@ void CMedicalResultView::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_TXT_PATIENTNAME,	m_txtPatientName);
 	DDX_Control(pDX, IDC_TXT_PATIENTSEX,	m_txtPatientSex);
 	DDX_Control(pDX, IDC_TXT_PATIENTAGE,	m_txtPatientAge);
+	DDX_Control(pDX, IDC_TXT_ORDERNO,		m_txtOrderNo);
 	DDX_Control(pDX, IDC_TXT_DOCID,			m_txtDocID);
 	DDX_Control(pDX, IDC_TXT_INPATIENTNO,	m_txtInpatientNo);
 	DDX_Control(pDX, IDC_TXT_BEDNO,			m_txtBedNo);
@@ -96,6 +97,7 @@ void CMedicalResultView::PopulateFields()
 		m_txtPatientName.SetWindowText(_T(""));
 		m_txtPatientSex.SetWindowText(_T(""));
 		m_txtPatientAge.SetWindowText(_T(""));
+		m_txtOrderNo.SetWindowText(_T(""));
 		m_txtDocID.SetWindowText(_T(""));
 		m_txtInpatientNo.SetWindowText(_T(""));
 		m_txtBedNo.SetWindowText(_T(""));
@@ -143,6 +145,7 @@ void CMedicalResultView::PopulateFields()
 		m_txtPatientName.SetWindowText(pCurrentMedicalResultObject->m_sPatientName);
 		m_txtPatientSex.SetWindowText(pCurrentMedicalResultObject->m_sPatientSex);
 		m_txtPatientAge.SetWindowText(pCurrentMedicalResultObject->m_sPatientAge);
+		m_txtOrderNo.SetWindowText(pCurrentMedicalResultObject->m_sOrderNo );
 		m_txtDocID.SetWindowText(pCurrentMedicalResultObject->m_sDocID);
 		m_txtInpatientNo.SetWindowText(pCurrentMedicalResultObject->m_sInpatientNo);
 		m_txtBedNo.SetWindowText(pCurrentMedicalResultObject->m_sBedNo);
@@ -208,6 +211,9 @@ void CMedicalResultView::OnInitialUpdate()
 	SetResize(IDC_LBL_PATIENTSEX, SZ_TOP_LEFT, SZ_TOP_LEFT);
 	SetResize(IDC_TXT_PATIENTSEX, SZ_TOP_LEFT, SZ_TOP_LEFT);
 	SetResize(IDC_LBL_PATIENTAGE, SZ_TOP_LEFT, SZ_TOP_LEFT);
+	SetResize(IDC_TXT_PATIENTAGE, SZ_TOP_LEFT, SZ_TOP_LEFT);
+	SetResize(IDC_LBL_ORDERNO, SZ_TOP_LEFT, SZ_TOP_LEFT);
+	SetResize(IDC_TXT_ORDERNO, SZ_TOP_LEFT, SZ_TOP_LEFT);
 	SetResize(IDC_LBL_DOCID, SZ_TOP_LEFT, SZ_TOP_LEFT);
 	SetResize(IDC_TXT_DOCID, SZ_TOP_LEFT, SZ_TOP_LEFT);
 	SetResize(IDC_LBL_INPATIENTNO, SZ_TOP_LEFT, SZ_TOP_LEFT);
@@ -245,6 +251,8 @@ void CMedicalResultView::OnInitialUpdate()
 
 	SetResize(IDC_LBL_ENHANCEDFLAG, SZ_BOTTOM_RIGHT, SZ_BOTTOM_RIGHT);
 	SetResize(IDC_TXT_ENHANCEDFLAG, SZ_BOTTOM_RIGHT, SZ_BOTTOM_RIGHT);
+
+
 
 	PopulateFields();
 

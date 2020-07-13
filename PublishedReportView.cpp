@@ -2928,6 +2928,19 @@ void CPublishedReportView::ViewOriginalReport()
 	pApp->ViewOriginalReport(pObj);	
 }
 
+
+void CPublishedReportView::ViewStandardValue()
+{
+
+	//调用检查检验的知识库
+
+	CCloudERVApp *pApp = (CCloudERVApp *) AfxGetApp();
+	CMedicalResultObject *pObj = NULL;
+
+	MessageBox(TEXT("检验标准值列表："));
+}
+
+
 void CPublishedReportView::ViewImageMode1(int nTag)
 {
 	CString sStudyGUID(""), sSystemCode(""), sAccessionNo(""), sStudyUID(""), sPatientName(""), sDocId(""), sPatientSex(""), sStudyDate("");
@@ -3154,6 +3167,15 @@ void CPublishedReportView::OnUpdateActions(CCmdUI *pCmdUI)
 				bEnabled = (pCurrentMedicalResultObj->m_bFromXIS && !pCurrentMedicalResultObj->m_bReportFileUrlsSearched);
 		}		
 		break;
+	case ID_VIEWVALUE_STANDARD:	// 查看标准值
+		pCurrentMedicalResultObj = GetDocument()->GetCurrentMedicalResultObject();
+		bEnabled = (pCurrentMedicalResultObj != NULL);
+		/*if (bEnabled) {
+			bEnabled = (!pCurrentMedicalResultObj->m_sReportFileUrls.IsEmpty());
+			if (!bEnabled) 
+				bEnabled = (pCurrentMedicalResultObj->m_bFromXIS && !pCurrentMedicalResultObj->m_bReportFileUrlsSearched);
+		}*/		
+		break;
 	case ID_MEDICALRESULT_SAVEPOS1:		// 保存列表列宽
 		bEnabled = m_bReportColumnWidthChanged && (pApp->GetReportResultGridColumnWidthSaveMode() == 0);
 		break;
@@ -3212,6 +3234,9 @@ void CPublishedReportView::OnExecuteActions(UINT nCommandID)
 		break;
 	case ID_VIEWREPORT_ORIGINAL:
 		ViewOriginalReport();
+		break;
+	case ID_VIEWVALUE_STANDARD:
+		ViewStandardValue();
 		break;
 	case ID_MEDICALRESULT_SAVEPOS1:
 		SaveHeaderWidthOfReportControl(m_ctlResult, szSectionName1, szKeyName1);

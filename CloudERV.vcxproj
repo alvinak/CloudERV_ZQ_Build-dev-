@@ -184,6 +184,7 @@
     <ClInclude Include="DirDialog.h" />
     <ClInclude Include="DummyDoc.h" />
     <ClInclude Include="EncodeStringDlg.h" />
+    <ClInclude Include="ERVSignClient.h" />
     <ClInclude Include="FTPClient\BlockingSocket.h" />
     <ClInclude Include="FTPClient\Definements.h" />
     <ClInclude Include="FTPClient\FTPClient.h" />
@@ -194,10 +195,8 @@
     <ClInclude Include="BitmapViewerView.h" />
     <ClInclude Include="DcmSeriesCompareDoc.h" />
     <ClInclude Include="JPEGIJG.H" />
-    <ClInclude Include="LoginDlg.h" />
     <ClInclude Include="MagnifyWnd.h" />
     <ClInclude Include="MainFrm.h" />
-    <ClInclude Include="md5.h" />
     <ClInclude Include="MedicalResultObject.h" />
     <ClInclude Include="MedicalResultView.h" />
     <ClInclude Include="MemoryDC.h" />
@@ -253,6 +252,7 @@
     <ClCompile Include="DirDialog.cpp" />
     <ClCompile Include="DummyDoc.cpp" />
     <ClCompile Include="EncodeStringDlg.cpp" />
+    <ClCompile Include="ERVSignClient.cpp" />
     <ClCompile Include="FTPClient\BlockingSocket.cpp" />
     <ClCompile Include="FTPClient\FTPClient.cpp" />
     <ClCompile Include="FTPClient\FTPDataTypes.cpp" />
@@ -262,10 +262,8 @@
     <ClCompile Include="BitmapViewerView.cpp" />
     <ClCompile Include="DcmSeriesCompareDoc.cpp" />
     <ClCompile Include="JPEGIJG.CPP" />
-    <ClCompile Include="LoginDlg.cpp" />
     <ClCompile Include="MagnifyWnd.cpp" />
     <ClCompile Include="MainFrm.cpp" />
-    <ClCompile Include="md5.cpp" />
     <ClCompile Include="MedicalResultObject.cpp" />
     <ClCompile Include="MedicalResultView.cpp" />
     <ClCompile Include="MemoryDC.cpp" />

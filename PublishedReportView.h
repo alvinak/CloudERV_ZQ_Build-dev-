@@ -76,6 +76,8 @@ private:
 
 	void	ViewOriginalReport();
 
+	void	ViewStandardValue();
+
 	void	LoadHeaderWidthOfReportControl(CXTPReportControl &wndReport, const TCHAR *szSectionName, const TCHAR *szKeyName);
 	void	SaveHeaderWidthOfReportControl(CXTPReportControl &wndReport, const TCHAR *szSectionName, const TCHAR *szKeyName);
 

@@ -10,6 +10,7 @@
 #include <vector>
 
 #include "SystemConfiguration.h"
+#include "ERVSignClient.h"
 
 // CCloudERVApp:
 // See CloudERV.cpp for the implementation of this class
@@ -144,6 +145,9 @@ public:
 
 private:
 	HANDLE	m_hMutex;
+
+	CERVSignClient m_oERVSignClient;
+
 	CSystemConfiguration m_SystemConfiguration;
 
 	int		m_nAutoLoadImagesForSingleResultOfCmdLineMode;

@@ -119,7 +119,9 @@
 
 #include "curl\curl.h"
 
-#include "LoginDlg.h"
+#include "afxdialogex.h"
+#include <string>
+
 
 //
 // 新老ImageViewer的接口不同
@@ -190,6 +192,7 @@ static char g_lpszConfigFileName[260],g_lpszProfileName[100];
 static HANDLE g_hCMoveThread = NULL;
 static DWORD  g_dwCMoveThreadId = 0;
 
+static	CString g_sERVServerBaseUrl("");
 
 //---------------------------------------------------------------------------
 
@@ -2202,11 +2205,6 @@ int	  CCloudERVApp::GetInifileInt(const TCHAR *szSectionName, const TCHAR *szKey
 BOOL CCloudERVApp::InitInstance()
 {
 
-	////创建登录窗口并以模态方式创建
-	//CLoginDlg dlg;
-	//dlg.DoModal ();
-
-
 	HWND    hPrevWnd;
 	CCmdLineInfo cmdInfo;
 	BOOL bSendOk;
@@ -2251,8 +2249,6 @@ BOOL CCloudERVApp::InitInstance()
         return FALSE;
   
 	AfxEnableControlContainer();
-
-	
 
 	CWinApp::InitInstance();
 	WSAStartup(winSockVersionNeeded, &winSockData);
@@ -2608,6 +2604,8 @@ BOOL CCloudERVApp::InitInstance()
 	g_sImageViewerAET = sDicomServerAET;
 	g_nImageViewerPort = nDicomServerPort;
 
+	g_sERVServerBaseUrl = GetInifileStr(szSettingSection, _T("ERVServerBaseUrl"), L"", szIniFile);
+
 	// 优化老系统数据调取(C-Move)
 	m_bOptimizeLegacyLoading = (GetInifileInt(szSettingSection, _T("OptimizeLegacyLoading"), 0, szIniFile) == 1);
 	g_bOptimizeLegacyLoading = m_bOptimizeLegacyLoading;
@@ -2653,6 +2651,32 @@ BOOL CCloudERVApp::InitInstance()
 	if (sAppTitle.IsEmpty())
 		sAppTitle.LoadString(AFX_IDS_APP_TITLE);
 
+
+	//////////新增登录界面/////////////////
+	
+
+	std::string sParams("");
+
+	sParams = "<Params>";
+	sParams += "<ERVServerBaseUrl>";
+	sParams += CStringA(g_sERVServerBaseUrl);
+	sParams += "</ERVServerBaseUrl>";
+	sParams += "</Params>";
+
+	m_oERVSignClient.LoadClient("");
+	m_oERVSignClient.Initialize(sParams.c_str());
+
+	if (m_oERVSignClient.Connected()){
+		if(!m_oERVSignClient.Login(NULL))
+			return FALSE;
+	}
+	
+
+
+
+
+
+	////////////////////////////////////////
 	m_pQueryPublishedReportDocTemplate = new CMultiDocTemplate(IDR_DUMMY,
 		RUNTIME_CLASS(CPublishedReportDoc),
 		RUNTIME_CLASS(CPublishedReportFrame),
@@ -2790,6 +2814,7 @@ BOOL CCloudERVApp::InitInstance()
 	PostMessage(pMainFrame->m_hWnd,WM_REFRESHPARAMS,0,0);
 
 	m_pQueryPublishedReportDocTemplate->OpenDocumentFile(NULL);
+
 
 	return TRUE;
 }

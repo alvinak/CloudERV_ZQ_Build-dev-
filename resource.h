@@ -60,15 +60,12 @@
 #define IDC_CURSOR_HANDDRAG             210
 #define IDI_SORTINCR                    213
 #define IDR_DCMSERIESCMP                214
-#define IDD_LOGIN                       216
 #define IDC_EDIT1                       1000
 #define IDC_EDIT                        1000
 #define IDC_EDITSTR                     1000
 #define IDC_TXT_SERVICENAMES            1000
 #define IDC_EDIT_VALUE                  1000
-#define IDC_EDIT_UserID                 1000
 #define IDC_VALUE                       1001
-#define IDC_EDIT_Password               1001
 #define IDC_EDT_FIELDVALUE              1002
 #define IDC_EDT_FINDINGS                1003
 #define IDC_NAME1                       1004
@@ -153,6 +150,7 @@
 #define IDC_TXT_DOCID                   1076
 #define IDC_WIDTH2                      1077
 #define IDC_RADIO1                      1078
+#define IDC_TXT_PATIENTAGE2             1078
 #define IDC_CENTER2                     1079
 #define IDC_RADIO2                      1080
 #define IDC_WIDTH3                      1081
@@ -203,9 +201,7 @@
 #define IDC_TXT_CRITICALFLAG            1141
 #define IDC_LBL_INFECTIOUSFLAG          1142
 #define IDC_TXT_ENHANCEDFLAG            1143
-#define IDC_BTN_LOGIN                   1143
 #define IDC_LBL_ENHANCEDFLAG            1144
-#define IDC_BTN_CANCEL                  1144
 #define IDC_TXT_WARNCONTENT             1145
 #define IDC_LBL_WARNCONTENT             1146
 #define IDI_POPUP_CLOSE                 8500
@@ -385,12 +381,13 @@
 #define ID_MEDICALRESULT_SAVEPOS1       32980
 #define ID__32981                       32981
 #define ID_DCMIMAGE_COMPARE             32982
+#define ID_VIEWVALUE_STANDARD           32985
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        217
+#define _APS_NEXT_RESOURCE_VALUE        216
 #define _APS_NEXT_COMMAND_VALUE         32984
 #define _APS_NEXT_CONTROL_VALUE         1143
 #define _APS_NEXT_SYMED_VALUE           101
